@@ -5,13 +5,12 @@ const Task = (data) => {
 
     return (
         <View style={styles.items}>
-             <Text >{data.text}</Text>
+            <Text >{data.text}</Text>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
-
     items: {
         backgroundColor: '#FFF',
         padding: 10,
@@ -22,10 +21,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginBottom: 15,
     },
-    items1:{
+    items1: {
         paddingLeft: 100,
     }
 })
+
 
 export default Task;
 

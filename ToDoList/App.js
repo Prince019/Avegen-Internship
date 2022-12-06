@@ -23,25 +23,16 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.part1} >My Tasks For Today</Text>
-
       <View style={styles.part2}>
         {
           taskitem.map((item, index) => {
-
             return (
-
               <TouchableOpacity>
                 <Task text={item} />
                 <Text style={styles.items1} onPress={() => delete1(index)}>
                   <Icon name="delete" size={30} color="#900" />
                 </Text>
               </TouchableOpacity>)
-
-
-
-
-
-
           })
         }
 
@@ -52,14 +43,11 @@ export default function App() {
       </View>
 
       <View>
-       
-          <TouchableOpacity style={styles.circle} onPress={() => add()}  >
+        <TouchableOpacity style={styles.circle} onPress={() => add()}  >
           <Text >
             <Icon name="content-save" size={30} color="#161" />
           </Text>
         </TouchableOpacity>
-        
-        
       </View>
     </View>
 
@@ -76,7 +64,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#b3c7fc'
   },
   part2: {
-
     paddingBottom: 40,
     paddingTop: 50,
     alignItems: 'center',
@@ -88,13 +75,11 @@ const styles = StyleSheet.create({
   inputbox: {
     backgroundColor: '#FFF',
     padding: 10,
-
     paddingLeft: 20,
     paddingRight: 20,
     borderRadius: 12,
     justifyContent: 'space-between',
     marginBottom: 15,
-
   },
   button: {
     paddingBottom: 500,
@@ -113,9 +98,7 @@ const styles = StyleSheet.create({
   items1: {
     paddingLeft: 200,
     paddingBottom: 10,
-
   }
-
 });
 
 
