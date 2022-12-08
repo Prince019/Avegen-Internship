@@ -43,7 +43,16 @@ export default function App() {
       </View>
 
       <View>
-        <TouchableOpacity style={styles.circle} onPress={() => add()}  >
+        <TouchableOpacity style={styles.circle} onPress={() => 
+        {
+          if(task ){
+            add()
+          }else{
+            alert('Please enter the task')
+          }
+        }
+        }
+           >
           <Text >
             <Icon name="content-save" size={30} color="#161" />
           </Text>
